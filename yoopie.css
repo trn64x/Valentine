@@ -1,0 +1,34 @@
+/* Styl dla ekranu ładowania */
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3E1E68;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    z-index: 1000;
+}
+
+/* Ukryj zawartość strony na początku */
+.hidden {
+    display: none;
+}
+
+/* Styl dla efektu pojawienia się */
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
