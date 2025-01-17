@@ -63,7 +63,7 @@ function animateTimeSince(obj, startDate, duration) {
         const seconds = currentDate.getSeconds();
 
         // Wyświetlenie wyniku
-        obj.innerHTML = `<h1>To już: <div class="black">${years} rok </div> <div class="black">${months}miesięcy </div>  <div class="black">${days} dni </div> <div class="black">${hours} godzin </div>  <div class="black">${minutes} minut </div> <div class="black">${seconds} sekund</div> <p>od ${startDate}! i każdy dzień na nowo mi pokazywał co to miłość hshsh</p></h1>`;
+        obj.innerHTML = `<h1>To już: <div class="black">${years} rok </div> <div class="black">${months} miesięcy </div>  <div class="black">${days} dni </div> <div class="black">${hours} godzin </div>  <div class="black">${minutes} minut </div> <div class="black">${seconds} sekund</div> <p>od ${startDate}! i każdy dzień na nowo mi pokazywał co to miłość hshsh</p></h1>`;
 
         // Kontynuuj animację
         if (progress < 1) {
