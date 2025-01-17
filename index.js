@@ -5,7 +5,6 @@ document.addEventListener("click", () => {
         if(currentIndex < 3){
         const current = document.getElementById("hello" + currentIndex);
         const next = document.getElementById("hello" + (currentIndex + 1));
-        
         // Ukrycie obecnego diva
         if (current) {
             current.style.display = "none"; // Ukryj obecny div
@@ -24,8 +23,11 @@ document.addEventListener("click", () => {
     }
 }
     count();
+    
 });
-
+function binarySearch(){
+    let levels = [];
+}
 function animateTimeSince(obj, startDate, duration) {
     const ourFirstDay = new Date(startDate); // Data początkowa
     let startTimestamp = null;
@@ -38,7 +40,7 @@ function animateTimeSince(obj, startDate, duration) {
 
         // Animowana różnica czasu
         const currentDate = new Date(ourFirstDay.getTime() + (Date.now() - ourFirstDay.getTime()) * progress);
-
+        
         // Obliczenie różnicy czasu
         let years = currentDate.getFullYear() - ourFirstDay.getFullYear();
         let months = currentDate.getMonth() - ourFirstDay.getMonth();
